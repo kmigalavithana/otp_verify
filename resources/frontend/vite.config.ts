@@ -6,9 +6,10 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 // @ts-ignore
 // @ts-ignore
+// @ts-ignore
 export default defineConfig({
-  plugins: [
-      react(),
-     tailwindcss(),
-  ],
+  plugins: [tailwindcss(),react(),],
+    server: {
+      port: 3000,
+    }
 })
